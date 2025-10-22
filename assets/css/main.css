@@ -1367,6 +1367,7 @@ section,
   text-align: center;
   overflow: hidden;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .course .card img {
