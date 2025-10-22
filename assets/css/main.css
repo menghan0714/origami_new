@@ -1351,27 +1351,39 @@ section,
 # Course Section
 --------------------------------------------------------------*/
 
-.course .card{
-  width: 100px;
-  height: 150px;
-  background-color: yellow;
-  color: white;
+.course .cards-container {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  gap: 30px; /* 卡片之間的間距 */
+  flex-wrap: wrap; /* 視窗變小時自動換行 */
+  margin-top: 20px;
 }
 
-.clearfix::after{
-    content:'';
-    display: block;
-    clear: both;
+.course .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.leftfix{
-    float: left;
+.course .card img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.rightfix{
-    float: right;
+.course .card p {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #333;
 }
 
+.course .card:hover {
+  transform: translateY(-5px);
+}
 
 
 /*--------------------------------------------------------------
