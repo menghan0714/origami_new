@@ -7,6 +7,12 @@
   <title>十二面體-小夜燈</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <style>
+  .video-container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+  }
+  </style>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -78,14 +84,10 @@
 
     </div>
   </header>
-
-  <iframe width="640" height="360" 
-  src="https://www.youtube.com/embed/snkkAGWZYkQ"
-  title="YouTube video player" 
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-   </iframe>
+  <div class={video-container}>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/snkkAGWZYkQ" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
+    </iframe>
+  </div>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
