@@ -1350,8 +1350,25 @@ section,
 /*--------------------------------------------------------------
 # Course Section
 --------------------------------------------------------------*/
-.course .container2{
-  background-color: black;
+.course .card{
+  width: 100px;
+  height: 150px;
+  background-color: yellow;
+  color: white;
+}
+
+.clearfix::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.leftfix{
+    float: left;
+}
+
+.rightfix{
+    float: right;
 }
 
 /*--------------------------------------------------------------
