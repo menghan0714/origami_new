@@ -9,8 +9,11 @@
   <meta name="keywords" content="">
   <style>
     .video-container {
-       display: flex;
-       justify-content: center; /* 水平置中 */
+      position: relative;
+      width: 80%;
+      max-width: 1080px;
+      margin: 0 auto;
+      aspect-ratio: 16 / 9; /* 自動保持16:9比例 */
   }
   </style>
 
@@ -85,7 +88,7 @@
     </div>
   </header>
   <div class="video-container">
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/snkkAGWZYkQ" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
+    <iframe  src="https://www.youtube.com/embed/snkkAGWZYkQ" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
     </iframe>
   </div>
 
