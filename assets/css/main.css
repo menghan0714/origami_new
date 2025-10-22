@@ -1351,28 +1351,16 @@ section,
 # Course Section
 --------------------------------------------------------------*/
 .course .container{
-  justify-content: center;
+  display: flex;
 }
 .course .card{
+  align-items: center;
   width: 100px;
   height: 150px;
   background-color: yellow;
   color: white;
 }
 
-.clearfix::after{
-    content:'';
-    display: block;
-    clear: both;
-}
-
-.leftfix{
-    float: left;
-}
-
-.rightfix{
-    float: right;
-}
 
 /*--------------------------------------------------------------
 # Contact Section
