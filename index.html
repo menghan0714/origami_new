@@ -7,149 +7,7 @@
   <title>指尖上的藝數-多面體摺紙工作坊</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <style>
-        .section-title {
-            text-align: center;
-            padding-bottom: 40px;
-        }
-        
-        .section-title h2 {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        
-        .section-title p {
-            color: #7f8c8d;
-            font-size: 16px;
-        }
-        
-        .portfolio-filters {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-        
-        .portfolio-filters li {
-            padding: 8px 20px;
-            cursor: pointer;
-            border: 2px solid #e0e0e0;
-            border-radius: 25px;
-            font-size: 14px;
-        }
-        
-        .portfolio-filters li.filter-active {
-            background-color: #c8986a;
-            border-color: #c8986a;
-            color: white;
-        }
-        
-        /* Masonry Grid 布局 */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            grid-auto-flow: dense;
-        }
-        
-        /* 針對不同圖片比例設置不同高度 */
-        .portfolio-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        
-        /* 正方形圖片 (1:1) */
-        .portfolio-item.ratio-square {
-            grid-row: span 2;
-        }
-        
-        /* 橫向圖片 (4:3 或 16:9) */
-        .portfolio-item.ratio-landscape {
-            grid-row: span 2;
-        }
-        
-        /* 直向圖片 (2:3 或更高) */
-        .portfolio-item.ratio-portrait {
-            grid-row: span 3;
-        }
-        
-        /* 人物肖像 (接近正方形但稍微直向) */
-        .portfolio-item.ratio-headshot {
-            grid-row: span 2;
-        }
-        
-        .portfolio-content {
-            position: relative;
-            height: 100%;
-        }
-        
-        .portfolio-content img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        
-        .portfolio-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
-            padding: 20px;
-            color: white;
-        }
-        
-        .portfolio-info h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 5px;
-            color: #c8986a;
-        }
-        
-        .portfolio-info p {
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-        
-        .portfolio-info a {
-            color: white;
-            font-size: 20px;
-            margin-right: 15px;
-            text-decoration: none;
-        }
-        
-        /* 隱藏類別 */
-        .portfolio-item.hidden {
-            display: none;
-        }
-        
-        /* 響應式設計 */
-        @media (max-width: 992px) {
-            .portfolio-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .portfolio-item.ratio-square,
-            .portfolio-item.ratio-portrait,
-            .portfolio-item.ratio-headshot {
-                grid-row: span 1;
-            }
-        }
-  </style>
+ 
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -393,72 +251,44 @@
           </ul><!-- End Portfolio Filters -->
 
 
-            <div class="portfolio-grid">
-                <!-- 圖片1：日本藝術家 - 正方形 (吉澤章與作品) -->
-                <div class="portfolio-item ratio-square filter-app">
-                    <div class="portfolio-content">
-                        <img src="assets/img/portfolio/吉澤章.png" alt="吉澤章">
-                        <div class="portfolio-info">
-                            <h4>日本</h4>
-                            <p>吉澤章</p>
-                            <a href="assets/img/portfolio/Akira_Yoshizawa.jpg" title="放大檢視"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="更多詳情"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div>
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-                <!-- 圖片2：美國藝術家 - 橫向 (Robert J. Lang 作品) -->
-                <div class="portfolio-item ratio-landscape filter-product">
-                    <div class="portfolio-content">
-                        <img src="assets/img/portfolio/Robert.jpg.png" alt="Robert J. Lang">
-                        <div class="portfolio-info">
-                            <h4>美國</h4>
-                            <p>Robert J. Lang</p>
-                            <a href="assets/img/portfolio/RobertLang-200px .jpg" title="放大檢視"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="更多詳情"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/Akira_Yoshizawa.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>日本</h4>
+                  <p>吉澤章</p>
+                  <a href="assets/img/portfolio/Akira_Yoshizawa.jpg" title="小夜燈" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-                <!-- 圖片3：其他藝術家 - 直向 (Éric Joisel 作品) -->
-                <div class="portfolio-item ratio-portrait filter-branding">
-                    <div class="portfolio-content">
-                        <img src="assets/img/portfolio/branding-1.jpg" alt="Éric Joisel">
-                        <div class="portfolio-info">
-                            <h4>其他</h4>
-                            <p>Éric Joisel、Juho Könkkölä</p>
-                            <a href="assets/img/portfolio/branding-1.jpg" title="放大檢視"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="更多詳情"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>美國</h4>
+                  <p>Robert J. Lang </p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="PHIZZ元件" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-                <!-- 圖片4：人物肖像 (頭像方形) -->
-                <div class="portfolio-item ratio-headshot filter-branding">
-                    <div class="portfolio-content">
-                        <img src="assets/img/portfolio/artist-2.jpg" alt="藝術家">
-                        <div class="portfolio-info">
-                            <h4>美國</h4>
-                            <p>藝術家名稱</p>
-                            <a href="assets/img/portfolio/artist-2.jpg" title="放大檢視"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="更多詳情"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>其他</h4>
+                  <p>Éric Joisel 、Juho Könkkölä</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="藝術摺紙" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
+              </div>
 
-                <!-- 圖片5：人物肖像 (頭像方形) -->
-                <div class="portfolio-item ratio-headshot filter-branding">
-                    <div class="portfolio-content">
-                        <img src="assets/img/portfolio/artist-3.jpg" alt="藝術家">
-                        <div class="portfolio-info">
-                            <h4>其他</h4>
-                            <p>藝術家名稱</p>
-                            <a href="assets/img/portfolio/artist-3.jpg" title="放大檢視"><i class="bi bi-zoom-in"></i></a>
-                            <a href="portfolio-details.html" title="更多詳情"><i class="bi bi-link-45deg"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div><!-- End Portfolio Container -->
 
         </div>
 
