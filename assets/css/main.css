@@ -68,8 +68,7 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: url("assets/img/棕色背景.jpg");
   font-family: var(--default-font);
 }
 
