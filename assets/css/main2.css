@@ -748,8 +748,7 @@ h6 {
 
 .page-title .column{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  margin: 0 auto;
   font-size: 3rem;
   color: white;
 }
