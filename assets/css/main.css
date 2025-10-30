@@ -1628,22 +1628,12 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-/* 統一藝術家照片大小 */
-.artist-section img {
-  width: 300px;          /* 統一寬度 */
-  height: 300px;         /* 統一高度 */
-  object-fit: cover;     /* 保持比例裁切置中 */
-  border-radius: 8px;    /* 可選，圓角效果 */
+/* 統一摺紙名人堂圖片大小 */
+#portfolio .portfolio-content img {
+  width: 100%;           /* 撐滿容器寬度 */
+  height: 300px;          /* 統一高度，可依需求改 250 或 350 */
+  object-fit: cover;      /* 等比例裁切、置中 */
+  border-radius: 8px;     /* 圓角可選 */
   display: block;
-  margin: 0 auto;        /* 水平置中 */
 }
-
-/* 讓照片排成整齊方格 */
-.artist-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 
