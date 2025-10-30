@@ -793,11 +793,10 @@ section,
   position: absolute;
   top: 25%;
   left: 15%;
-  transform: translate(-50%, -50%);
   color: white;
-  text-align: center;
+  text-align: left;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.8;
 }
 
