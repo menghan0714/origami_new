@@ -788,18 +788,6 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero-image-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.hero-image-wrapper img {
-  opacity: 0.8;
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-}
 
 .hero-text {
   position: absolute;
