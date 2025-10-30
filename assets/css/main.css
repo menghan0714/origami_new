@@ -1626,14 +1626,36 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
-}
-/* 統一摺紙名人堂圖片大小 */
+ /* 摺紙名人堂圖片：長方形 + 五張一列 */
 #portfolio .portfolio-content img {
-  width: 100%;           /* 撐滿容器寬度 */
-  height: 300px;          /* 統一高度，可依需求改 250 或 350 */
-  object-fit: cover;      /* 等比例裁切、置中 */
-  border-radius: 8px;     /* 圓角可選 */
+  width: 100% !important;
+  aspect-ratio: 4 / 3;         /* 長方形比例（改成 16/9 會更扁） */
+  object-fit: cover !important;
+  border-radius: 8px;
   display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* 滑過時微放大、有陰影 */
+#portfolio .portfolio-content img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 改用 CSS Grid 控制五欄排列 */
+#portfolio .isotope-container {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr); /* 一列 5 張 */
+  gap: 20px;                             /* 間距可改 10~30 */
+  justify-items: center;
+}
+
+/* 卡片內容不超出 */
+#portfolio .portfolio-item {
+  width: 100%;
+  max-width: 250px;  /* 控制每張最大寬度，可依需求調 */
+}
+
+}
+
 
