@@ -1625,7 +1625,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+
  /* 摺紙名人堂圖片：長方形 + 五張一列 */
 #portfolio .portfolio-content img {
   width: 100% !important;
@@ -1656,6 +1656,5 @@ section,
   max-width: 250px;  /* 控制每張最大寬度，可依需求調 */
 }
 
-}
 
 
