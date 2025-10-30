@@ -1681,3 +1681,78 @@ section,
 
 /* 間距微調（依喜好） */
 #portfolio .portfolio-item { padding: 10px; }
+/* ===== 摺紙名人堂：Hover 顯示資訊/遮罩/圖示 ===== */
+
+/* 卡片輕微浮起（已有就略過） */
+#portfolio .portfolio-item:hover .portfolio-content{
+  transform: translateY(-2px);
+}
+
+/* 覆蓋層（放標題/文字），預設隱藏 */
+#portfolio .portfolio-info{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 16px;
+  /* 從下往上淡出的遮罩 */
+  background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,.05) 60%, transparent);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(6%);
+  transition: opacity .25s ease, transform .25s ease;
+  pointer-events: none;           /* 不擋住內部按鈕的點擊 */
+}
+
+/* 滑過或鍵盤聚焦時顯示覆蓋層 */
+#portfolio .portfolio-content:hover .portfolio-info,
+#portfolio .portfolio-content:focus-within .portfolio-info{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 文字樣式 */
+#portfolio .portfolio-info h4{
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+#portfolio .portfolio-info p{
+  margin: 0;
+  font-size: .85rem;
+  opacity: .9;
+}
+
+/* 放大鏡按鈕（glightbox）的外觀與位置 */
+#portfolio .preview-link{
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,.92);
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.18);
+  pointer-events: auto;          /* 允許點擊 */
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+#portfolio .preview-link:hover{
+  transform: scale(1.06);
+  box-shadow: 0 6px 16px rgba(0,0,0,.25);
+}
+
+/* 觸控裝置（沒有 hover）— 預設就顯示資訊帶 */
+@media (hover: none){
+  #portfolio .portfolio-info{
+    opacity: 1;
+    transform: none;
+    background: linear-gradient(to top, rgba(0,0,0,.45), transparent 55%);
+  }
+}
+
