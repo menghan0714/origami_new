@@ -1628,4 +1628,22 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* 統一藝術家照片大小 */
+.artist-section img {
+  width: 300px;          /* 統一寬度 */
+  height: 300px;         /* 統一高度 */
+  object-fit: cover;     /* 保持比例裁切置中 */
+  border-radius: 8px;    /* 可選，圓角效果 */
+  display: block;
+  margin: 0 auto;        /* 水平置中 */
+}
+
+/* 讓照片排成整齊方格 */
+.artist-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 
