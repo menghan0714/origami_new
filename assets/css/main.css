@@ -1626,35 +1626,58 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 
- /* 摺紙名人堂圖片：長方形 + 五張一列 */
-#portfolio .portfolio-content img {
-  width: 100% !important;
-  aspect-ratio: 4 / 3;         /* 長方形比例（改成 16/9 會更扁） */
-  object-fit: cover !important;
+ /* --- 摺紙名人堂：長方形卡片 + 由左到右排列 --- */
+
+/* 卡片容器：固定長方形比例，塞圖 */
+#portfolio .portfolio-content {
+  position: relative;
+  aspect-ratio: 4 / 3;        /* 改 16/9 會更扁 */
+  overflow: hidden;
   border-radius: 8px;
-  display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 滑過時微放大、有陰影 */
+/* 圖片填滿卡片、不變形 */
+#portfolio .portfolio-content img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+/* 滑過效果（可選） */
 #portfolio .portfolio-content img:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0,0,0,.2);
 }
 
-/* 改用 CSS Grid 控制五欄排列 */
+/* 讓 Isotope 使用自家佈局，不要用 grid */
 #portfolio .isotope-container {
-  display: grid !important;
-  grid-template-columns: repeat(5, 1fr); /* 一列 5 張 */
-  gap: 20px;                             /* 間距可改 10~30 */
-  justify-items: center;
+  display: block !important;
 }
 
-/* 卡片內容不超出 */
-#portfolio .portfolio-item {
-  width: 100%;
-  max-width: 250px;  /* 控制每張最大寬度，可依需求調 */
+/* 一列 5 張：把 bootstrap 的 col 寬度覆寫掉 */
+@media (min-width: 1200px) {
+  #portfolio .portfolio-item {
+    width: 20% !important;   /* 5 欄 */
+  }
 }
 
+/* RWD：桌機→平板→手機 漸進縮欄 */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #portfolio .portfolio-item { width: 25% !important; } /* 4 欄 */
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #portfolio .portfolio-item { width: 33.333% !important; } /* 3 欄 */
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #portfolio .portfolio-item { width: 50% !important; } /* 2 欄 */
+}
+@media (max-width: 575.98px) {
+  #portfolio .portfolio-item { width: 100% !important; } /* 1 欄 */
+}
 
-
+/* 間距微調（依喜好） */
+#portfolio .portfolio-item { padding: 10px; }
