@@ -791,13 +791,13 @@ section,
 
 .hero-text {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 5%;
   color: white;
   text-align: left;
   border-radius: 10px;
-  font-size: 1.8rem;
-  line-height: 1.8;
+  font-size: 1.5rem;
+  line-height: 2;
   font-family: 'Noto Serif TC', serif;
 }
 
