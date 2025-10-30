@@ -1749,6 +1749,10 @@ section,
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
+
+    .step-card h2{
+      color: white;
+    }
     .step-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 40px rgba(0,0,0,0.15);
@@ -1781,6 +1785,8 @@ section,
       font-size: 1.8rem;
       font-weight: 600;
     }
+
+   
 
     .step-content {
       padding: 2.5rem;
