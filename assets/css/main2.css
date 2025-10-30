@@ -746,6 +746,14 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
+.page-title .column{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  color: white;
+}
+  
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
