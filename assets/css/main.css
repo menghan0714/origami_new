@@ -243,6 +243,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  width: 100% !important;
 }
 
 .header .logo {
