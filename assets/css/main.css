@@ -303,7 +303,8 @@ h6 {
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
-    transition: 0.3s;
+    transition: 0.3s ease,, transform 0.4s ease;
+    transform-origin: bottom;  /* ✓ 摺紙效果必要 */
   }
 
   .navmenu a i,
@@ -322,6 +323,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    transform: rotateX(25deg) translateY(-2px);
   }
 
   .navmenu .dropdown ul {
