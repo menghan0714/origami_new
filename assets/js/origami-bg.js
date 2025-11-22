@@ -9,7 +9,7 @@ resize();
 window.addEventListener("resize", resize);
 
 // ---- Config ----
-const POINT_COUNT = 60;
+const POINT_COUNT = 40;
 const MAX_DISTANCE = 150;
 
 const points = [];
