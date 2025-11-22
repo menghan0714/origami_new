@@ -1,4 +1,4 @@
-const canvas = document.getElementById("bg-network");
+const canvas = document.getElementById("bg-canvas");
 const ctx = canvas.getContext("2d");
 
 function resize() {
