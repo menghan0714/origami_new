@@ -319,11 +319,14 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover>a{
+    transform: rotateX(25deg) translateY(-2px);
+    color: var(--nav-hover-color);
+  }
+  
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
-    transform: rotateX(25deg) translateY(-2px);
+    color: var(--nav-color);
   }
 
   .navmenu .dropdown ul {
