@@ -802,8 +802,7 @@ section,
   text-align: center;
 }
 
-.origami-section p{
-  font-size: 8rem; 
+.origami-section span{
   font-family: Cinzel, serif;
 }
 
