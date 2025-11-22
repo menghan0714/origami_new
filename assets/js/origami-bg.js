@@ -35,7 +35,7 @@ function update() {
     if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
     // 畫點
-    ctx.fillStyle = "rgba(0,0,0,0.4)";
+    ctx.fillStyle = "rgba(0,0,0,0.6)";
     ctx.beginPath();
     ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
     ctx.fill();
@@ -54,7 +54,7 @@ function update() {
       if (dist < MAX_DISTANCE) {
         const alpha = 1 - dist / MAX_DISTANCE;
 
-        ctx.strokeStyle = `rgba(0,0,0, ${alpha * 0.25})`;
+        ctx.strokeStyle = `rgba(0,0,0, ${alpha * 0.5})`;
         ctx.beginPath();
         ctx.moveTo(p1.x, p1.y);
         ctx.lineTo(p2.x, p2.y);
