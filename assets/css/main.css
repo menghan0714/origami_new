@@ -765,7 +765,6 @@ section,
   padding: 60px 0;
   scroll-margin-top: 87px;
   overflow: clip;
-  z-index: 1;
 }
 
 @media (max-width: 1199px) {
