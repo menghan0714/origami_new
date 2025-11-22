@@ -798,17 +798,13 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  color: white;
-  text-align: left;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  line-height: 2;
-  font-family: 'Noto Serif TC', serif;
-  text-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+.origami-section{
+  text-align: center;
+}
+
+.origami-section p{
+  font-size: 8rem; 
+  font-family: Cinzel, serif;
 }
 
 /*--------------------------------------------------------------
