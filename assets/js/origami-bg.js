@@ -23,10 +23,11 @@ for (let i = 0; i < POINT_COUNT; i++) {
   });
 }
 
+// ★★★ 滑動時 → 溫和推力（柔和跳動）★★★
 window.addEventListener("wheel", () => {
   points.forEach((p) => {
-    p.vx += (Math.random() - 0.5) * 3;
-    p.vy += (Math.random() - 0.5) * 3;
+    p.vx += (Math.random() - 0.5) * 0.6;  // 推力變小，更柔和
+    p.vy += (Math.random() - 0.5) * 0.6;
   });
 });
 
@@ -38,6 +39,11 @@ function update() {
     p.x += p.vx;
     p.y += p.vy;
 
+    // ★★★ 阻尼（讓速度慢慢回復 → 優雅）★★★
+    p.vx *= 0.97;
+    p.vy *= 0.97;
+
+    // 邊界彈回
     if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
     if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
