@@ -800,7 +800,7 @@ section,
 .origami span{
   font-size: 6rem; 
   font-family: Cinzel, serif; 
-  display: inline-block;
+  display: block;
 }
   
 /*--------------------------------------------------------------
