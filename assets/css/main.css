@@ -291,8 +291,8 @@ h6 {
     position: relative;
   }
 
-  .navmenu a,
-  .navmenu a:focus {
+  .navmenu a:not(first-child),
+  .navmenu a:focus:not(first-child) {
     color: var(--nav-color);
     padding: 18px 10px;
     font-size: 0.9rem;
