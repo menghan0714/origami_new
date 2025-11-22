@@ -250,7 +250,7 @@ h6 {
   background-color: color-mix(in srgb, var(--background-color) 30%, transparent);
   padding: 15px 0;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 1;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
@@ -765,7 +765,6 @@ section,
   padding: 60px 0;
   scroll-margin-top: 87px;
   overflow: clip;
-  z-index: 995;
 }
 
 @media (max-width: 1199px) {
