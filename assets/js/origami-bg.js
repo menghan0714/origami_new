@@ -23,6 +23,13 @@ for (let i = 0; i < POINT_COUNT; i++) {
   });
 }
 
+window.addEventListener("wheel", () => {
+  points.forEach((p) => {
+    p.vx += (Math.random() - 0.5) * 3;
+    p.vy += (Math.random() - 0.5) * 3;
+  });
+});
+
 function update() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
