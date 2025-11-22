@@ -797,17 +797,10 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.origami-section span .title{
+.origami-section span{
   font-size: 7rem; 
   font-family: Cinzel, serif; 
   display: inline-block;
-}
-
-.origami-section span .content{
-  font-size: 2rem; 
-  font-family: Cinzel, serif; 
-  display: inline-block;
-  font-weight: regular;
 }
   
 /*--------------------------------------------------------------
