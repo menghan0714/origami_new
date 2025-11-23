@@ -18,9 +18,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "GenRyuMin TW";
+  src: url("/fonts/GenRyuMin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --default-font: 'Noto+Serif+TC',  sans-serif,"Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: 'Noto+Serif+TC',  sans-serif;
+  --heading-font: "GenRyuMin TW", serif;
   --nav-font: 'Cinzel',  sans-serif;
 }
 
