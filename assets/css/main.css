@@ -1092,7 +1092,7 @@ section,
   font-weight: 400;
   color: #ffffff;
   display: inline-block;
-  background-color: #B38B6D;
+  background-color: var(--accent-color);
 }
 
 .portfolio .portfolio-content .portfolio-info h4 a {
