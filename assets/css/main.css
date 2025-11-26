@@ -1019,6 +1019,13 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+#portfolio .special-img:hover{
+  transform: scale(1.03);
+}
+  
+
+  
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
