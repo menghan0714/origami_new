@@ -866,7 +866,7 @@ section,
 
 .about{
   position: relative;
-  
+  z-index:-1;
 }
 
 .about .pulsating-play-btn {
