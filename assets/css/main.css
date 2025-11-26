@@ -87,7 +87,6 @@ body {
 a {
   color: var(--accent-color);
   text-decoration: none;
-  transition: 0.3s;
 }
 
 a:hover {
