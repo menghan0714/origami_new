@@ -1086,6 +1086,7 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
+  position: relative;
   font-size: 14px;
   padding: 5px 10px;
   font-weight: 400;
