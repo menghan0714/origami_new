@@ -330,6 +330,11 @@ h6 {
     color: var(--nav-hover-color);
   }
 
+  .navmenu li a.active {
+  color: var(--nav-hover-color);
+  transform: rotateX(15deg) translateY(-2px);
+}
+
   .navmenu span{
     color: var(--nav-color);
     padding: 18px 10px;
