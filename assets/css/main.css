@@ -1752,7 +1752,7 @@ section,
 /* 放大鏡按鈕（glightbox）的外觀與位置 */
 #portfolio .preview-link{
   position: absolute;
-  right: 12px;
+  left: 12px;
   top: 12px;
   width: 36px;
   height: 36px;
