@@ -1097,6 +1097,7 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info h4 a {
+  display: inline-block;
   width: 10%;
   height: 10%;
   position: absolute;
