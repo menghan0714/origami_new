@@ -533,8 +533,35 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("#navmenu a");
 
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // 目前進入視野的 section ID
+          const id = entry.target.id;
 
+          // 清除全部 active
+          navLinks.forEach((link) => link.classList.remove("active"));
+
+          // 找到對應的 nav-link 加上 active
+          const currentLink = document.querySelector(`#navmenu a[href="#${id}"]`);
+          if (currentLink) {
+            currentLink.classList.add("active");
+          }
+        }
+      });
+    },
+    {
+      threshold: 0.5, // 至少 50% 進入畫面才觸發
+    }
+  );
+
+  sections.forEach((sec) => observer.observe(sec));
+</script>
 </body>
 
 </html>
