@@ -1020,7 +1020,7 @@ section,
 # Portfolio Section
 --------------------------------------------------------------*/
 
-#portfolio .special-img:hover{
+#portfolio .specialimg:hover{
   transform: scale(1.03);
 }
   
