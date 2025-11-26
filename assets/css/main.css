@@ -1097,6 +1097,7 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info h4 a {
+  z-index: 10;
   position: absolute;
   right: 5%;
 }
