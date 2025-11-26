@@ -332,7 +332,7 @@ h6 {
 
   .navmenu li a.active {
   color: var(--nav-hover-color);
-  transform: rotateX(15deg) translateY(-2px);
+  transform: rotateX(25deg) translateY(-2px);
 }
 
   .navmenu span{
