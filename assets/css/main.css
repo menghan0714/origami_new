@@ -1667,7 +1667,7 @@ section,
 /* 卡片容器：固定長方形比例，塞圖 */
 #portfolio .portfolio-content {
   position: relative;
-  aspect-ratio: 4 / 3;        /* 改 16/9 會更扁 */
+  aspect-ratio: 3 / 3;        /* 改 16/9 會更扁 */
   overflow: hidden;
   border-radius: 8px;
 }
